@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Unbounded:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+.hero {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+.hero h1{
+    color: black;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 180px;
+}
+main{
+    padding: 50px 0;
+    background: radial-gradient(
+    circle at 2% 2%, /* Adjust the positioning of the dots as needed */
+    #000 2px, /* Black dot color and size */
+    transparent 3px);
+    background-size: 20px 20px;
+}
+
+/* -------- About us section -------- */
+.about-us, .job-details, .get-started {
+    background-color: white;
+    padding: 40px;
+}
+.about-us{
+    color: white;
+    width: 85%;
+    margin: 50px auto;
+    border-radius: 15px;
+    text-align: left;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #7743DB 0%, #C3ACD0 80%);
+}
+.about-us h2{
+    width: 70%;
+    margin: 50px auto;  
+    font-size: 40px;
+    font-family: 'Unbounded', sans-serif;
+}
+.about-us p{    
+    width: 70%;
+    margin: 50px auto;  
+    font-family: "Manrope", sans-serif;
+}
+
+/* -------- job listings -------- */
+.jobs{
+    background-image: repeating-linear-gradient(45deg, transparent, 
+    transparent 5px, #F4EEFF 5px, #f2f2f2 10px);
+    padding: 20px 0;
+}
+ .job-listing{
+     width: 80%;
+     margin: 0 auto; 
+ }
+ .job-listing h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Unbounded', sans-serif;
+    padding: 50px 0;
+ }
+.job-details {
+    background-color: white;
+    padding: 50px;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+.job-details h2 {
+    text-align: left;
+    font-family: "Unbounded", sans-serif;
+    font-size: 1.5em;
+    color: #7743DB;
+    padding: 20px 0;
+}
+.job-info{
+    margin: 20px 0;
+}
+
+
+/* -------- "Get Started" section -------- */
+.get-started {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+button {
+    background-color: #7743DB;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.get-started h2{
+    font-size: 40px;
+    font-family: 'Unbounded', sans-serif;
+    margin: 20px 0;
+}
+.get-started p{
+    font-family: "Manrope", sans-serif;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.get-started button:hover {
+    background-color: #451079;
+  }
+
+/* -------- footer -------- */
+footer {
+    background: linear-gradient(135deg, #7743DB 0%, #C3ACD0 80%);
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
