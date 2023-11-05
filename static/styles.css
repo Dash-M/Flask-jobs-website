@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Unbounded:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=Unbounded:wght@800&display=swap');
 
 * {
     margin: 0;
@@ -9,23 +9,33 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
   }
+main{
+    padding: 50px 0;
+    background: radial-gradient(circle at 2% 2%, 
+    #7D7C7C 2px, transparent 3px);
+    background-size: 20px 20px;
+}
+/* -------- Navbar section -------- */
+.container{
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
+
+/* -------- Hero section -------- */
 .hero {
-    color: white;
+    color: black;;
     text-align: center;
     padding: 50px 0;
 }
 .hero h1{
-    color: black;
     font-family: 'Unbounded', sans-serif;
-    font-size: 180px;
+    font-size: 12vw;
+    font-weight: 800;
 }
-main{
-    padding: 50px 0;
-    background: radial-gradient(
-    circle at 2% 2%, /* Adjust the positioning of the dots as needed */
-    #000 2px, /* Black dot color and size */
-    transparent 3px);
-    background-size: 20px 20px;
+.hero h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 3vw;
+    font-weight: 800;
 }
 
 /* -------- About us section -------- */
@@ -45,7 +55,7 @@ main{
 .about-us h2{
     width: 70%;
     margin: 50px auto;  
-    font-size: 40px;
+    font-size: 38px;
     font-family: 'Unbounded', sans-serif;
 }
 .about-us p{    
@@ -59,26 +69,31 @@ main{
     background-image: repeating-linear-gradient(45deg, transparent, 
     transparent 5px, #F4EEFF 5px, #f2f2f2 10px);
     padding: 20px 0;
+    text-align: center;
 }
  .job-listing{
-     width: 80%;
-     margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box;
  }
- .job-listing h2{
-    text-align: center;
+ .jobs h2{
     font-size: 40px;
     font-family: 'Unbounded', sans-serif;
     padding: 50px 0;
  }
 .job-details {
     background-color: white;
+    width: 500px;
     padding: 50px;
     border: 1px solid;
     border-radius: 15px;
     margin: 20px auto;
 }
 .job-details h2 {
-    text-align: left;
     font-family: "Unbounded", sans-serif;
     font-size: 1.5em;
     color: #7743DB;
@@ -87,7 +102,18 @@ main{
 .job-info{
     margin: 20px 0;
 }
-
+.job-details  button {
+    background-color: #7743DB;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.job-details  button:hover {
+    background-color: #C3ACD0
+}
 
 /* -------- "Get Started" section -------- */
 .get-started {
@@ -95,15 +121,6 @@ main{
     color: white;
     text-align: center;
     padding: 60px 0;
-}
-button {
-    background-color: #7743DB;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
 }
 .get-started h2{
     font-size: 40px;
@@ -115,10 +132,18 @@ button {
     width: 70%;
     margin: 50px auto;
 }
-
+.get-started button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: 1px solid #7743DB;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .get-started button:hover {
-    background-color: #451079;
-  }
+    border-color: #C3ACD0;
+}
 
 /* -------- footer -------- */
 footer {
